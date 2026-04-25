@@ -1,23 +1,31 @@
-# sqeel
+# kryptic.sh
 
-Vim-native SQL client built in Rust. Fast, terminal or GUI, no Electron.
+Native software tools for people who never left the terminal. Vim-shaped,
+Rust-built, no Electron, no JVM.
 
 ## Projects
 
-- **[sqeel](https://github.com/sqeel-sql/sqeel)** — the client. Postgres, MySQL, SQLite.
-- **[sqeel-sql.github.io](https://github.com/sqeel-sql/sqeel-sql.github.io)** — landing page: <https://sqeel-sql.github.io/>
+- **[sqeel](https://github.com/kryptic-sh/sqeel)** — vim-native SQL client.
+  Terminal or GUI, MySQL / Postgres / SQLite, tree-sitter highlighting,
+  LSP-aware completion + diagnostics, full vim engine including soft-wrap and
+  folding.
+- **[buffr](https://github.com/kryptic-sh/buffr)** — vim-inspired browser.
+  Native, GPU-accelerated. Rust + CEF.
 
-## Why
+## Principles
 
-- Native Rust. No JVM. No Electron.
-- First-class vim bindings.
-- Terminal (TUI) and GUI from one codebase.
-- MySQL, Postgres, SQLite out of the box.
+- **Native Rust.** No JVM, no Electron, no webview wrappers.
+- **Vim-shaped.** Modal editing, operators, text objects, marks — first
+  class, not a plugin.
+- **Mouse + keyboard.** Both work, always. Mode shouldn't dictate input.
+- **One codebase, multiple shells.** Terminal and GUI from the same core
+  where it makes sense.
+- **No telemetry. No analytics. No "experiences."** Just tools.
 
 ## Status
 
-Early. Expect breakage. File issues.
+Early on every project. Expect breakage. Issues + PRs welcome on each repo.
 
 ## License
 
-MIT.
+MIT across the board.
