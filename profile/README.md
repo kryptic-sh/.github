@@ -22,6 +22,10 @@ Hub: <https://www.kryptic.sh/>.
   IMAP/SMTP, Gmail XOAUTH2, Microsoft Graph, JMAP. Maildir + SQLite + tantivy.
   _Alpha — TUI usable, composer blocked on hjkl 0.1.0._
   <https://inbx.kryptic.sh/>
+- **[hodl](https://github.com/kryptic-sh/hodl)** — light crypto wallet, TUI.
+  ratatui UI, BIP-39 seed, BIP-32/44 derivation. Multi-chain (Bitcoin,
+  Ethereum). Local keys, encrypted at rest. Never phones home. _Early scaffold._
+  <https://hodl.kryptic.sh/>
 
 ## Principles
 
@@ -36,8 +40,8 @@ Hub: <https://www.kryptic.sh/>.
 ## Status
 
 Pre-1.0 across the board. sqeel is the most mature (release candidate). hjkl is
-on the way to 0.1.0; sqeel already runs on it. inbx is alpha. buffr is early
-scaffold. Expect breakage. Issues + PRs welcome on each repo.
+on the way to 0.1.0; sqeel already runs on it. inbx is alpha. buffr and hodl are
+early scaffolds. Expect breakage. Issues + PRs welcome on each repo.
 
 ## License
 
