@@ -15,10 +15,12 @@ Hub: <https://www.kryptic.sh/>.
 - **[buffr](https://github.com/kryptic-sh/buffr)** — vim-inspired browser.
   Native, GPU-accelerated. Rust + CEF. _Early (0.0.1) — scaffold + config +
   hot-reload CLI + permission prompts._ <https://buffr.kryptic.sh/>
-- **[hjkl](https://github.com/kryptic-sh/hjkl)** — vim engine, rope buffer,
-  modal editor primitives. `no_std + alloc`. Powers sqeel, buffr, and inbx from
-  one shared FSM. _0.1.0, SPEC frozen, Buffer trait sealed, `Editor<B, H>`
-  generic over backend + host._ <https://hjkl.kryptic.sh/>
+- **[hjkl](https://github.com/kryptic-sh/hjkl)** — vim-modal terminal editor +
+  the vim engine, rope buffer, and editor primitives behind it. `no_std + alloc`
+  core. Powers sqeel, buffr, and inbx from one shared FSM. _0.3.0 — multi-buffer
+  editing, fuzzy file/buffer/grep pickers, tree-sitter highlighting + comment
+  markers, smart indent, `.editorconfig`. `cargo install hjkl`._
+  <https://hjkl.kryptic.sh/>
 - **[inbx](https://github.com/kryptic-sh/inbx)** — modal-vim email client.
   IMAP/SMTP, Gmail XOAUTH2, Microsoft Graph, JMAP (incl. SSE push). Maildir +
   SQLite + tantivy. CardDAV. _Beta — working CLI + TUI + GUI._
@@ -40,10 +42,11 @@ Hub: <https://www.kryptic.sh/>.
 
 ## Status
 
-hjkl and sqeel both shipped 0.1.0 to crates.io. hjkl's trait surface is frozen;
-sqeel + buffr + inbx all run on it from the registry. inbx is in beta — CLI +
-TUI + GUI all working. buffr and hodl are early scaffolds. Expect breakage on
-0.0.x projects. Issues + PRs welcome on each repo.
+hjkl is at 0.3.0 — standalone editor binary plus 9 crates on crates.io. SPEC
+frozen since 0.1.0; sqeel + buffr + inbx all run on it from the registry. sqeel
+shipped 0.1.0. inbx is in beta — CLI + TUI + GUI all working. buffr and hodl are
+early scaffolds. Expect breakage on 0.0.x projects. Issues + PRs welcome on each
+repo.
 
 ## License
 
